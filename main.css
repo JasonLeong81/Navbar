@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.navbar__header{
+    background:#545454;
+    display:flex;
+    justify-content: space-between;
+    padding:0.5rem 1rem;
+    border-bottom:0.3rem solid #6baa75;
+}
+
+.navbar__btn{
+    border:5px solid #6baa75;
+    align-self: center;
+    cursor:pointer;
+}
+
+.bar1,.bar2,.bar3{
+    width:30px;
+    height:5px;
+    margin:0.5rem;
+    background:#6baa75;
+    transition:all 2s ease;
+}
+
+.navbar__links{
+    margin-bottom:-3.5px; /* make up for the margin-bottom */
+    list-style-type: none;
+    transition:all 2s ease;
+    /*  */
+    height:0;
+    overflow:hidden;
+}
+
+.navbar__collapse{
+    height:240px; /* this has been tested before */
+
+}
+
+li i{
+    margin-right:5px;
+}
+.navbar__single-link{
+    display:block;
+    background:#69747c;
+    padding:1rem;
+    font-size:1.5rem;
+    text-decoration:none;
+    text-transform: capitalize;
+    color:#6baa75;
+    transition:all 1s ease; /*as we're hovering over them */
+}
+
+.navbar__single-link:hover{
+    padding-left:1.5rem; /*pushes links to the right while hovering them*/
+    background:#545454;
+}
+
+header{
+    height:90vh;
+    background:url('./img/q.jfif')center/cover no-repeat;
+}
+
+.change .bar1{
+    /* transform:rotate(-45deg) */
+    transform:rotate(-45deg) translate(-10px,10px);
+}
+.change .bar2{
+    opacity:0; /* hide it */
+}
+.change .bar3{
+    /* transform:rotate(45deg) */
+    transform:rotate(45deg) translate(-7px,-8px);
+}
